@@ -1,0 +1,79 @@
+.item{
+    width: 100%;
+    height: 65px;
+    margin: 6px 0px;
+    line-height: 65px;
+    background-color: rgba(255,255,255,0.1);
+    font-size: 16px;
+    color:rgb(255,255,255)
+
+}
+.item .con{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+.item .con span{
+    cursor: pointer;
+    font-size: 18px;
+}
+.item .finished{
+    position: relative;
+    animation: fade 0.7s linear forwards;
+}
+.item .finished::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    display:block;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255,255,255,0.5);
+    animation: line 0.5s linear forwards;
+
+}
+@keyframes fade{
+    0%{
+       color: rgba(255,255,255,1);
+    }
+    100%{
+        color: rgba(255,255,255,0.5);
+    }
+}
+@keyframes line{
+    from{
+        width: 0px;
+    }
+    to{
+        width:calc(100% + 10px);
+    }
+}
+.oper span{
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.noEdit{
+    display: none;
+}
+.edit{
+    display:block;
+}
+.showItem{
+    display: block;
+}
+.editItem{
+    display: none;
+}
+.con input{
+    border:1px solid rgba(255,255,255,0.4);
+    width: 80%;
+    outline: none;
+    background-color: rgba(255,255,255,0);
+    color: rgb(255,255,255);
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}

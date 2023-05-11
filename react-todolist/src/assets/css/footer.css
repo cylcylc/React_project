@@ -1,0 +1,28 @@
+.footer{
+    width: 80%;
+    margin:40px auto;
+}
+.footer p{
+    margin:5px 0px;
+    color: rgb(255,255,255);
+    font-size: 24px;
+}
+.footer input{
+    outline:none;
+    border: 0;
+    width: 260px;
+    height: 50px;
+    font-size: 18px;
+}
+.footer button{
+    width: 120px;
+    height: 50px;
+    margin-left: 5px;
+    border:0.1px solid rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0);
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+.footer input{
+    padding-left: 10px;
+}
