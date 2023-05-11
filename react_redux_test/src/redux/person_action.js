@@ -1,0 +1,1 @@
+export const createAddpersonAction=personObj=>({type:"add_person",data:personObj})
